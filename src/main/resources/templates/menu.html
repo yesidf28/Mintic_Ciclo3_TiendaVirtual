@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-    <head>
-        <title>Hello World!</title>
-    </head>
-    <body>
-        <h1 th:inline="text">Menù Principal [[${#httpServletRequest.remoteUser}]]!</h1>
-        <form th:action="@{/logout}" method="get">
-            <input type="submit" value="Cerrar Sesion"/>
-        </form>
-        <h1><a th:href="@{/admin}"> admin</a> | <a th:href="@{/user}"> user</a></h1>
-    </body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tienda Genérica</title>
+     <style>
+		ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: gray;
+			}
+			
+		li {
+			  float: left;
+			}
+			
+	    li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			
+			li a:hover {
+			  background-color: red;
+			}
+   </style>
+
+  </head>
+  <body>
+    <h3>Tienda Genérica</h3>
+	    <ul>
+	    	<li><a href="/usuarios">Usuarios</a></li>
+	    	<li><a href="/clientes">Clientes</a></li>
+	    	<li><a href="/proveedores">Proveedores</a></li>
+	    	<li><a href="/productos">Productos</a></li>
+	    	<li><a href="/ventas">Ventas</a></li>
+	    	<li><a href="/reportes">Reportes</a></li>
+	    </ul>
+  </body>
 </html>
