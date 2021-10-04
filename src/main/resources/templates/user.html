@@ -1,1 +1,73 @@
-<h1>User</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tienda Genérica</title>
+     <style>
+		ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: gray;
+			}
+			
+		li {
+			  float: left;
+			}
+			
+	    li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			
+			li a:hover {
+			  background-color: red;
+			}
+   </style>
+
+  </head>
+  <body>
+    <h3>Tienda Genérica</h3>
+	    <ul>
+	    	<li><a href="/usuarios">Usuarios</a></li>
+	    	<li><a href="/clientes">Clientes</a></li>
+	    	<li><a href="/proveedores">Proveedores</a></li>
+	    	<li><a href="/productos">Productos</a></li>
+	    	<li><a href="/ventas">Ventas</a></li>
+	    	<li><a href="/reportes">Reportes</a></li>
+	    </ul>
+	   <br>
+	   <h3>Administración de Usuarios</h3> 
+	   
+	  <div>
+		<form action="/guardarusuario">
+		  <label for="fname">Cédula:</label><br>
+		  <input type="text" id="fname" name="fname" value=""><br>
+		  
+		  <label for="lname">Usuario:</label><br>
+		  <input type="text" id="lname" name="lname" value=""><br>
+		  
+		  <label for="lname">Nombre Completo:</label><br>
+		  <input type="text" id="lname" name="lname" value=""><br>
+		  
+		  <label for="fname">Contraseña:</label><br>
+		  <input type="password" id="fname" name="fname" value=""><br>
+		  
+		  <label for="lname">Correo Electrónico:</label><br>
+		  <input type="text" id="lname" name="lname" value=""><br>
+		  
+		  
+		  
+		  <br>
+		  <br>
+		  <input type="submit" value="Agregar">
+		</form>
+
+	</div>
+	   
+  </body>
+</html>
